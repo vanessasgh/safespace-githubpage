@@ -187,7 +187,7 @@
 
 **ID:** 3.4.1
 - **Title:** “Our Team” members
-- **Description:** Display all first and last names of all team members under “Our Team” (i.e. .
+- **Description:** Display all first and last names of all team members under “Our Team”.
 
 
 **ID:** 3.4.2

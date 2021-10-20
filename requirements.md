@@ -99,58 +99,67 @@
 - **Title:** Account Options Pop-Up (Exit Click)
 - **Description:** While the pop-up is displayed, the user can click outside of the pop-up area to make the pop-up disappear.
 
+**ID:** 1.3
+- **Title:** Navigation Bar location
+- **Description:** Navigation Bar appears on every page of SafeSpace.
+
 ## 2.0 Onboarding
+
 **ID:** 2.1
+- **Title:** Onboarding page
+- **Description:** Onboarding is the landing page of the site.
+
+**ID:** 2.2
 - **Title:** Display Navigation Bar
 - **Description:** Navigation bar is available on the top of the page.
 
 
-**ID:** 2.2
+**ID:** 2.3
 - **Title:** Header
 - **Description:** Display a header “Welcome to SafeSpace”.
 
 
-**ID:** 2.3
+**ID:** 2.4
 - **Title:** Purpose Description
 - **Description:** Display accompanying description “Anonymously share and read feelings and stories around suicide.”
 
 
-**ID:** 2.4
+**ID:** 2.5
 - **Title:** Video
 - **Description:** Embed a video on suicidal ideation: https://www.youtube.com/watch?v=AecNqFk8glo
 
 
-**ID:** 2.4.1
+**ID:** 2.5.1
 - **Title:** Video Source Citation
 - **Description:** Video has appropriate source citation listed below.
 
 
-**ID:** 2.4.2
+**ID:** 2.5.2
 - **Title:** Video Hyperlink
 - **Description:** Attach hyperlink on the title of the video to the source.
 
 
-**ID:** 2.5
+**ID:** 2.6
 - **Title:** “Get Started” button
 - **Description:** Display “Get Started” button.
 
 
-**ID:** 2.5.1
+**ID:** 2.6.1
 - **Title:** “Get Started” button hyperlink
 - **Description:** “Get Started” button is hyperlinked to redirect the user to the “Sign Up” page.
 
 
-**ID:** 2.6
+**ID:** 2.7
 - **Title:** Already have an account? Sign in
 - **Description:** Display text “Already have an account? Sign in”.
 
 
-**ID:** 2.6.1
+**ID:** 2.7.1
 - **Title:** Already have an account? Sign in hyperlink
 - **Description:** “Sign in” will be hyperlinked to redirect the user to the “Sign In” form.
 
 
-**ID:** 2.7
+**ID:** 2.8
 - **Title:** Spacing
 - **Description:** Center all information except for the navbar on this page.
 
@@ -187,7 +196,7 @@
 
 **ID:** 3.4.1
 - **Title:** “Our Team” members
-- **Description:** Display all first and last names of all team members under “Our Team”.
+- **Description:** Display all first and last names of all team members under “Our Team” (i.e. .
 
 
 **ID:** 3.4.2
@@ -432,7 +441,7 @@
 
 **ID:** 5.1.6
 - **Title:** Remain Logged In
-- **Description:** Once signed in, users will be logged in for the remainder of the time they are on the website until they choose to sign out.
+- **Description:** Once signed in, users will be logged in for the remainder of the time they are on the website until they click the 'sign out' button under profile picture dropdown in navigation bar.
 
 
 **ID:** 5.1.7
@@ -447,12 +456,12 @@
 
 **ID:** 5.1.9
 - **Title:** Save Previous Email Entry
-- **Description:** The email address text box will save previously submitted user entries.
+- **Description:** On an unsuccessful attempt to submit the form, after it fails, the email field will remain populated.
 
 
 **ID:** 5.1.10
 - **Title:** Clear Previous Password Entry
-- **Description:** The password text box will clear previously submitted user entry.
+- **Description:** On an unsuccessful attempt to submit the form, after it fails, the email field will remain populated while the password text box will clear previously submitted user entry.
 
 
 **ID:** 5.1.11
@@ -510,12 +519,12 @@
 - **Description:** Confirm password text box has accompanying label “Confirm Password”.
 
 
-**ID:** 5.2.6
+**ID:** STRETCH GOAL 5.2.6
 - **Title:** Profile Picture Upload Button
 - **Description:** Displays a button to upload a user profile from a file.
 
 
-**ID:** 5.2.6.1
+**ID:** STRETCH GOAL 5.2.6.1
 - **Title:** Profile Picture Upload Button Functionality
 - **Description:** On click, users will be given the option to open up their files and choose an appropriate picture format to upload as their profile picture (JPEG, PNG, etc.)
 
@@ -595,7 +604,7 @@
 
 
 **ID:** 5.2.14.2
-- **Title:** STRETCH GOAL - Terms & Conditions Hyperlink
+- **Title:** Terms & Conditions Hyperlink
 - **Description:** Hyperlink “Terms & Conditions” to a static page outlining terms and conditions.
 
 
@@ -647,12 +656,6 @@
 **ID:** 6.2.2
 - **Title:** Search box
 - **Description:** A text box that allows users to type in text and content tags (i.e. hashtags)
-
-
-**ID:** 6.2.3
-- **Title:** STRETCH GOAL - Enter button
-- **Description:** While in the text-entry box, hitting the “Enter” button will act as a proxy to the search button
-
 
 **ID:** 6.3.1
 - **Title:** Post’s star icon
@@ -784,12 +787,12 @@
 - **Description:** User’s username will be displayed.
 
 
-**ID:** 7.2
+**ID:** STRETCH GOAL 7.2
 - **Title:** Profile Picture Image
 - **Description:** User’s profile picture will be displayed.
 
 
-**ID:** 7.3
+**ID:** STRETCH GOAL 7.3
 - **Title:** Edit Profile Picture Button
 - **Description:** On click of the edit icon, user’s will be able to change or remove their profile picture at any time by uploading a file.
 

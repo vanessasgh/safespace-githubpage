@@ -368,33 +368,38 @@
 - **Description:** A “submit” button will be displayed next to the search box.
 
 
-**ID:** 4.4.1.1.1
-- **Title:** Submit Button Functionality
+**ID:** 4.5
+- **Title:** 
+- **Description:** Display static image from Google Maps API for all McLean Hospital locations in the U.S.
+ 
+
+**ID:** 4.5.1
+- **Title:** STRETCH GOAL - Submit Button Functionality
 - **Description:** Clicking the submit button will generate results on the responsive map.
 
 
-**ID:** 4.4.1.1.2
+**ID:** 4.5.2
 - **Title:** STRETCH GOAL - Alternative Submit Option For Map
 - **Description:** While in the text-entry box, hitting the “Enter” button will act as a proxy to the submit button.
 
 
-**ID:** 4.4.1.2
-- **Title:** Map Search Error Text Box
+**ID:** 4.5.3
+- **Title:** STRETCH GOAL - Map Search Error Text Box
 - **Description:**  An error message is displayed when the user entry does not match any location on the API.
 
 
-**ID:** 4.4.2
-- **Title:** Responsive Map
+**ID:** 4.5.4
+- **Title:** STRETCH GOAL - Responsive Map
 - **Description:** Display a map that is responsive to what is submitted from the search box.
 
 
-**ID:** 4.4.2.1
-- **Title:** Map Results Success
+**ID:** 4.5.5
+- **Title:** STRETCH GOAL - Map Results Success
 - **Description:** The map displays results for “counselors”, “psychiatrists”, “therapists” in the area typed in the search box within 50 miles.
 
 
-**ID:** 4.4.2.2
-- **Title:** Map Results Error
+**ID:** 4.5.6
+- **Title:** STRETCH GOAL - Map Results Error
 - **Description:** The map does not change its current display.
 
 ## 5.0 User Authentication
@@ -556,8 +561,6 @@
 **ID:** 5.2.9
 - **Title:** Email Validity
 - **Description:** Clicking “Create Account” button prompts check of whether entered email address into email text box matches format a@a.com.
-
-
 **ID:** 5.2.10
 - **Title:** Password Validity
 - **Description:** Clicking “Create Account” button prompts check of whether the entered password in the password box contains at least 8 characters, 1 uppercase letter, 1 special character (on a standard qwerty keyboard), and 1 number.
@@ -738,12 +741,12 @@
 
 
 **ID:** 6.5.1.1
-- **Title:** Onclick post below 50 character
+- **Title:** Onclick post below 50 characters
 - **Description:** When the text in textbox is less than 50 characters, the “Post” button will be greyed out and not able to be clicked.
 
 
 **ID:** 6.5.1.2
-- **Title:** Onclick above or equal to 50 character
+- **Title:** Onclick above or equal to 50 characters
 - **Description:** When the text in textbox has more or equal than 50 characters, clicking the “Post” button will save the post to db and redirects the user back to the feed page
 
 
@@ -896,3 +899,4 @@
 **ID:** 10.4
 - **Title:** STRETCH GOAL - Web Page Test Check
 - **Description:** The application must maintain a “webpage security score” of B or higher as tested by Web Page Test.
+

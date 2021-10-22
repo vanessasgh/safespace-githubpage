@@ -369,7 +369,7 @@
 
 
 **ID:** 4.5
-- **Title:** 
+- **Title: Static Image Map** 
 - **Description:** Display static image from Google Maps API for all McLean Hospital locations in the U.S.
  
 

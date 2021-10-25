@@ -4,8 +4,8 @@
 
 # Users
 ## User View
-- Sign Up Form Component: The form that allows users to create a new user component. Controller "newUserFormHandler" function that handles submission of the form on click of an associated “Create Account” button.
-- Sign In Form Component: The form that allows users to log in as an existing user component. Controller "isValidUserHandler" function that handles submission of the form on click of an associated “Sign In” button.
+- Sign Up Form Component: The form that allows users to create a new user component. Controller "newUserFormHandler" function handles submission of the form on click of an associated “Create Account” button.
+- Sign In Form Component: The form that allows users to log in as an existing user component. Controller "isValidUserHandler" function handles submission of the form on click of an associated “Sign In” button.
 - User Profile Component: Display user information: username, college/university
 - Edit User Profile Component: The form that allows users to modify existing user component attributes “username” and “college”.
 - Greeting Component: Display post greeting with the username.
@@ -28,8 +28,8 @@
 
 # Post
 ## Post View
-- Post Form Component: The form that allows users to create a new post component. Controller "newPostFormHandler" function that handles submission of the form on click of an associated “Post” button.
-- Search Post Component: The text entry box that allows users to search for an existing post component. Controller "newSearchPostHandler" function that handles search submission of the text entry box on click of “Search” button or enter key.
+- Post Form Component: The form that allows users to create a new post component. Controller "newPostFormHandler" function handles submission of the form on click of an associated “Post” button.
+- Search Post Component: The text entry box that allows users to search for an existing post component. Controller "newSearchPostHandler" function handles search submission of the text entry box on click of “Search” button or enter key.
 
 ## Post Controller
 - "newPostFormHandler" function handles submission of the post view's "post form component". This extracts the attributes from the form fields and passes them in a call to post model's "createPost" function then handles the response and pushes it to the post view.

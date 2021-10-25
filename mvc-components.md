@@ -17,7 +17,7 @@
 - “isValidUserHandler” function handles submission of the user view’s “sign in form component”. This extracts attributes from the form fields and passes them in a call to user model’s “getUserInfoByID” function then handles the response and pushes it to the user view.
 - “getUserInfoHandler” function handles the user profile page load of the user view’s “user profile component”. This gets user data (username, college/university) from the user model’s “getUserInfoByID” then handles the response and pushes it to the user view.
 - “updateUserFormHandler” function handles submission of the user view’s “edit user profile component”. This extracts the attributes from the form fields and passes them in a call to the user model’s “updateUserInfo” function then handles the response and pushes it to the user view.
-- “getUserInfoHandler” function handles the home page load of the user view’s “greeting component”. This gets user’s username data from the user model’s “getUserInfoByID” and pushes it to the user view.
+- “getUsernameHandler” function handles the home page load of the user view’s “greeting component”. This gets user’s username data from the user model’s “getUserInfoByID” and pushes it to the user view.
 - “getUserPostsHandler” function handles the “Post History” tab load on the user profile page of the user view’s “list post history component”. This gets the user's post history data from the user model’s “getUserInfoByID” and pushes it to the user view.
 - “getUserSavedPostsHandler” function handles the “Saved Posts” tab load on the user profile page of the user view’s “list saved posts component”. This gets the user's post history data from the user model’s “getUserInfoByID” and pushes it to the user view.
 

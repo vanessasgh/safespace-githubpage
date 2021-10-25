@@ -1,9 +1,9 @@
-// TODO: Define Map object
-function Map() {
-
+function Map(name, type, address, picture) {
+    // TODO: Define Map object, takes in the attribute values as given in args and return the newly created object
+    return {}
 }
 
-// TODO: use google maps api to get names and locations from the given parameters
 function getLocation(keyword) {
-
+    // TODO: Return an array of all organizations that match the filters from the google maps api. If none match, return empty array.
+    return []
 }

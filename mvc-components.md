@@ -1,6 +1,6 @@
 # System Diagram
 
-![an overview of our system architecture](/spec-images/system-diagram.PNG)
+![an overview of our system architecture](spec-images/system-diagram.PNG)
 
 # Users
 ## User View

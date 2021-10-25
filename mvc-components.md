@@ -1,4 +1,5 @@
 # System Diagram
+
 ![an overview of our system architecture](/spec-images/system-diagram.PNG)
 
 # Users
@@ -50,4 +51,5 @@
 - “getLocation” function will receive the user input and make a request to the Google Maps API. It returns an array of names and locations.
 
 # Components Diagram
+
 ![an overview of our components architecture](/spec-images/components-diagram.PNG)

@@ -8,103 +8,103 @@ Aside from the time that we meet in classes on Mondays and Wednesdays, we plan t
 # Development Milestones
 ## Static (Due November 7)
 ### Onboarding Static Elements 
-Header
-Description
-Citations
-Hyperlinks
-Embedded Videos
-Styling
+- Header
+- Description
+- Citations
+- Hyperlinks
+- Embedded Videos
+- Styling
 
 ### About Us Static Elements
-Header
-Sub-headers
-Description
-Citations
-Hyperlinks
-Styling
+- Header
+- Sub-headers
+- Description
+- Citations
+- Hyperlinks
+- Styling
 
 ### Resources Static Elements
-Header
-Sub-headers
-Descriptions
-Citations
-Hyperlinks
-Embedded Videos
-Embedded Articles
-Text box
-Button
-Styling
+- Header
+- Sub-headers
+- Descriptions
+- Citations
+- Hyperlinks
+- Embedded Videos
+- Embedded Articles
+- Text box
+- Button
+- Styling
 
 ### User Authentication Static Elements
-Labels
-Text boxes
-Button
-Hyperlinks
-Styling
+- Labels
+- Text boxes
+- Button
+- Hyperlinks
+- Styling
 
 ### Feed & Posting Static Elements
-Header
-Text box
-Buttons (post, save)
-Content
-Infinitely scroll
-Styling
+- Header
+- Text box
+- Buttons (post, save)
+- Content
+- Infinitely scroll
+- Styling
 
 
 ### User Profile Static Elements
-Header
-Tabs
-Buttons
-Styling
+- Header
+- Tabs
+- Buttons
+- Styling
 
 ### Navigation Bar
-Route to appropriate pages
-Pop-up on Account Icon
-Styling
+- Route to appropriate pages
+- Pop-up on Account Icon
+- Styling
 
 ## Functional (Due November 14)
 ### Search Posts 
-Text box
-Button
+- Text box
+- Button
 
 ### Save Posts
-Save posts
-Saved posts able to view on user profile
+- Save posts
+- Saved posts able to view on user profile
 
 ### Past Posts
-Past posts able to view on user profile
+- Past posts able to view on user profile
 
 ### Created Post Information
-Post pop-up
-Greeting
-Content
-Tags
-Date
+- Post pop-up
+- Greeting
+- Content
+- Tags
+- Date
 
 ### Sign in
-Verify if existing account
-Option to sign up instead
+- Verify if existing account
+- Option to sign up instead
 
 ### Sign up 
-Validates user information
-Creates new account
+- Validates user information
+- Creates new account
 
 ### Edit Profile 
-Modify logged in user information
+- Modify logged in user information
 
 ## Non-Functional (Due November 21)
 ### Usability/Accessibility 
-Responsive
-Screen readable
-Contrast
-HTML Validation
-Contrast
+- Responsive
+- Screen readable
+- Contrast
+- HTML Validation
+- Contrast
 
 ### Performance 
-Speed optimization
+- Speed optimization
 
 ### Security 
-Database protection
+- Database protection
 
 
 

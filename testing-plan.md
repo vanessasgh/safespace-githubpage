@@ -3,11 +3,13 @@
 ## Manual Acceptance Testing
 
 Acceptance testing will be done manually (with a few non-functional requirements being done automatically) by the product designer after each pull request is merged. If any failures are found upon testing, the designer will open a new Github Issue describing the problem, and directly alert the developer working on that feature.
+
 This testing script is divided up into features, which match this team's milestones. Each time this testing script is run, tests for all completed features will be run. This will ensure that no new defects are introduced to existing functionality.
 Tests will be run in the following contexts:
 - Safari browser on iPhone8
 - Chrome browser on Mac Pro running MacOS Big Sur
 - Firefox browser on Razer Blade Stealth running Windows 10
+
 If for any reason the product designer is unable to fulfill their acceptance testing duties, the PM will immediately be notified and the team will work together to resolve any issues that come up. If difficulties in any area arise, the team will also utilize communication and work together to ensure we create the best MVP we are capable of. 
 
 ### Navigation Bar Static Elements (Due November 7)

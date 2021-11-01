@@ -3,10 +3,26 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { initializeApp } from "firebase/app";
+import { BrowserRouter } from 'react-router-dom';
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCyW0FMBDYSaxpHFUMNmBjeRa4re6iMCiA",
+  authDomain: "safespace-info442.firebaseapp.com",
+  projectId: "safespace-info442",
+  storageBucket: "safespace-info442.appspot.com",
+  messagingSenderId: "341806713597",
+  appId: "1:341806713597:web:dce4d3507af086f1750c94"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

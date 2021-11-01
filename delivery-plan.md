@@ -7,7 +7,7 @@ Aside from the time that we meet in classes on Mondays and Wednesdays, we plan t
 
 # Development Milestones
 ## Static (Due November 7)
-### Onboarding Static Elements 
+### Onboarding Static Elements
 - Header
 - Description
 - Citations
@@ -63,7 +63,7 @@ Aside from the time that we meet in classes on Mondays and Wednesdays, we plan t
 - Styling
 
 ## Functional (Due November 14)
-### Search Posts 
+### Search Posts
 - Text box
 - Button
 
@@ -85,30 +85,22 @@ Aside from the time that we meet in classes on Mondays and Wednesdays, we plan t
 - Verify if existing account
 - Option to sign up instead
 
-### Sign up 
+### Sign up
 - Validates user information
 - Creates new account
 
-### Edit Profile 
+### Edit Profile
 - Modify logged in user information
 
 ## Non-Functional (Due November 21)
-### Usability/Accessibility 
+### Usability/Accessibility
 - Responsive
 - Screen readable
 - Contrast
 - HTML Validation
-- Contrast
 
-### Performance 
+### Performance
 - Speed optimization
 
-### Security 
+### Security
 - Database protection
-
-
-
-
-
-
-

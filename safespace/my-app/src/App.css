@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+
+.navLink {
+  color: white;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  color: white;
+}
+
+.navList {
+  display: inline;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 13px;
+}
+
+.navBar {
+  padding: 1vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #131B23;
+}
+
+.logoImg {
+  height: 60px;
+}

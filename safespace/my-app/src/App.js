@@ -3,6 +3,7 @@ import './App.css';
 import OnboardingPage from './onboardingPage';
 import { Route, Switch, Link, Redirect, NavLink } from "react-router-dom";
 import AboutUsPage from './aboutUsPage';
+import SignInPage from './signInPage';
 
 function App(props) {
   // TODO: implement other pages to render
@@ -11,6 +12,9 @@ function App(props) {
   }
   const renderAboutUsPage = (routerProps) => {
     return <AboutUsPage {...routerProps} props={props} />
+  }
+  const renderSignInPage = (routerProps) => {
+    return <SignInPage {...routerProps} props={props} />
   }
 
   return (
@@ -21,6 +25,7 @@ function App(props) {
           {/* TODO: Add the other pages */}
           <Route exact path="/onboarding" render={renderOnboardingPage} />
           <Route path="/aboutus" render={renderAboutUsPage} />
+          <Route path="/login" render={renderSignInPage} />
           <Redirect to="/onboarding" />
         </Switch>
       </div>

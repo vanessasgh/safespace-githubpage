@@ -5,6 +5,7 @@ import { Route, Switch, Link, Redirect, NavLink } from "react-router-dom";
 import AboutUsPage from './aboutUsPage';
 import SignInPage from './signInPage';
 import SignUpPage from './signUpPage';
+import ResourcePage from './resourcePage';
 
 function App(props) {
   // TODO: implement other pages to render
@@ -20,6 +21,9 @@ function App(props) {
   const renderSignUpPage = (routerProps) => {
     return <SignUpPage {...routerProps} props={props} />
   }
+  const renderResourcePage = (routerProps) => {
+      return <ResourcePage {...routerProps} props={props} />
+  }
 
   return (
     <div>
@@ -31,6 +35,7 @@ function App(props) {
           <Route path="/aboutus" render={renderAboutUsPage} />
           <Route path="/login" render={renderSignInPage} />
           <Route path="/signup" render={renderSignUpPage} />
+          <Route path="/resources" render={renderResourcePage} />
           <Redirect to="/onboarding" />
         </Switch>
       </div>

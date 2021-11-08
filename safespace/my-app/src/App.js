@@ -2,11 +2,15 @@ import logo from './logo.png';
 import './App.css';
 import OnboardingPage from './onboardingPage';
 import { Route, Switch, Link, Redirect, NavLink } from "react-router-dom";
+import AboutUsPage from './aboutUsPage';
 
 function App(props) {
   // TODO: implement other pages to render
   const renderOnboardingPage = (routerProps) => {
-    return <OnboardingPage {... routerProps} props={props}/>
+    return <OnboardingPage {...routerProps} props={props} />
+  }
+  const renderAboutUsPage = (routerProps) => {
+    return <AboutUsPage {...routerProps} props={props} />
   }
 
   return (
@@ -16,6 +20,7 @@ function App(props) {
         <Switch>
           {/* TODO: Add the other pages */}
           <Route exact path="/onboarding" render={renderOnboardingPage} />
+          <Route path="/aboutus" render={renderAboutUsPage} />
           <Redirect to="/onboarding" />
         </Switch>
       </div>

@@ -91,3 +91,26 @@
   margin-top: 0px;
 }
 
+.mainHeaderDiv {
+  background-color: #131B23;
+  color: #ffff;
+  padding: 5vw;
+}
+
+.mainContentDiv {
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.mainTitleText {
+  margin: 0px;
+}
+
+.ourTeamList {
+  list-style-type: none;
+}
+
+.contentDiv {
+  padding: 5vw;
+}

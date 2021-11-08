@@ -144,3 +144,32 @@
   text-align: center;
   font-size: small;
 }
+
+.searchBar {
+  margin-bottom: 5vw;
+}
+
+.postMainDiv {
+  background-color: #E9F1F7;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 2vw;
+  text-align: start;
+}
+
+.postContentDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1vw;
+}
+
+.textInPostDiv {
+  background-color: #FFFF;
+  padding: 1vw;
+  border-radius: 10px;
+  width: 100%;
+  margin-right: 2vw;
+}
+

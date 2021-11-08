@@ -139,3 +139,8 @@
   margin-top: 1vw;
   text-align: center;
 }
+
+.evenSmallTextAuthentication {
+  text-align: center;
+  font-size: small;
+}

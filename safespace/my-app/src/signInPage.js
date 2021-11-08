@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 function SignInPage() {
     return (
@@ -18,7 +19,7 @@ function SignInPage() {
                         <button type="submit" class="btn btn-primary authenticationBtn">Submit</button>
                     </form>
                 </div>
-                <p className="smallTextAuthentication">Don't have an account? Sign Up</p>
+                <p className="smallTextAuthentication">Don't have an account? <Link to="/signup">Sign Up</Link></p>
             </div>
         </div>
     )

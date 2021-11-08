@@ -4,6 +4,7 @@ import OnboardingPage from './onboardingPage';
 import { Route, Switch, Link, Redirect, NavLink } from "react-router-dom";
 import AboutUsPage from './aboutUsPage';
 import SignInPage from './signInPage';
+import SignUpPage from './signUpPage';
 
 function App(props) {
   // TODO: implement other pages to render
@@ -16,6 +17,9 @@ function App(props) {
   const renderSignInPage = (routerProps) => {
     return <SignInPage {...routerProps} props={props} />
   }
+  const renderSignUpPage = (routerProps) => {
+    return <SignUpPage {...routerProps} props={props} />
+  }
 
   return (
     <div>
@@ -26,6 +30,7 @@ function App(props) {
           <Route exact path="/onboarding" render={renderOnboardingPage} />
           <Route path="/aboutus" render={renderAboutUsPage} />
           <Route path="/login" render={renderSignInPage} />
+          <Route path="/signup" render={renderSignUpPage} />
           <Redirect to="/onboarding" />
         </Switch>
       </div>

@@ -7,6 +7,10 @@ import SignInPage from './signInPage';
 import SignUpPage from './signUpPage';
 import ResourcePage from './resourcePage';
 import ProfilePage from './profilePage';
+import DropdownButton from 'react-bootstrap/DropdownButton'
+import Dropdown from 'react-bootstrap/Dropdown'
+
+import { Nav, NavDropdown, MenuItem } from "react-bootstrap";
 
 function App(props) {
   // TODO: implement other pages to render
@@ -53,15 +57,28 @@ function Header() {
     <header>
       <nav className="navBar">
         <Link to="/onboarding"><img src={logo} alt="logo" className="logoImg"></img></Link>
-        <ul>
-          <li className="navList"><NavLink exact to="/home" className="navLink">Home</NavLink></li>
-          <li className="navList"><NavLink to="/resources" className="navLink">Resources</NavLink></li>
-          <li className="navList"><NavLink to="/aboutus" className="navLink">About Us</NavLink></li>
-        </ul>
+        <Nav className="justify-content-end">
+          <Nav.Item>
+            <Nav.Link href="/home">Home</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link href="/resources">Resources</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link href="/aboutus">About Us</Nav.Link>
+          </Nav.Item>
+          <NavDropdown eventKey={2} title="Profile" id="basic-nav-dropdown">
+            <Dropdown.Item eventKey={2.1} href="/profile">
+              View my profile
+            </Dropdown.Item>
+            <Dropdown.Item eventKey={2.2} href="/login">
+              Sign Out
+            </Dropdown.Item>
+          </NavDropdown>
+        </Nav>
       </nav>
     </header>
   );
 }
-
 
 export default App;

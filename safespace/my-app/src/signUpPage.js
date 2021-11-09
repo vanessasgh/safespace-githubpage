@@ -5,9 +5,13 @@ import Button from 'react-bootstrap/Button'
 
 function SignUpPage() {
     const [showPrivacyPolicy, setShowPrivacyPolicy] = useState(false);
-
     const handleClosePrivacyPolicy = () => setShowPrivacyPolicy(false);
     const handleShowPrivacyPolicy = () => setShowPrivacyPolicy(true);
+
+    const [showTOS, setShowTOS] = useState(false);
+
+    const handleCloseTOS = () => setShowTOS(false);
+    const handleShowTOS = () => setShowTOS(true);
 
     return (
         <div className="mainContentPage">
@@ -39,13 +43,19 @@ function SignUpPage() {
                     </form>
                 </div>
                 <p className="smallTextAuthentication">Already have an account? <Link to="/login">Sign In</Link></p>
-                <p className="evenSmallTextAuthentication">By signing up, you agree to Terms of Service and <button class="link" onClick={handleShowPrivacyPolicy}>Privacy Policy</button></p>
+                <p className="evenSmallTextAuthentication">By signing up, you agree to <button class="link" onClick={handleShowTOS}>Terms of Service</button> and <button class="link" onClick={handleShowPrivacyPolicy}>Privacy Policy</button></p>
             </div>
             <Modal show={showPrivacyPolicy} onHide={handleClosePrivacyPolicy}>
                 <Modal.Header closeButton>
                     <Modal.Title>Privacy Policy</Modal.Title>
                 </Modal.Header>
                 <Modal.Body><PrivacyPolicyText /></Modal.Body>
+            </Modal>
+            <Modal show={showTOS} onHide={handleCloseTOS}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Terms of Services</Modal.Title>
+                </Modal.Header>
+                <Modal.Body><TOSText /></Modal.Body>
             </Modal>
         </div>
     )
@@ -70,6 +80,14 @@ function PrivacyPolicyText() {
             <br />
             <br />
             More to come........
+        </p>
+    )
+}
+
+function TOSText() {
+    return (
+        <p>
+            EXAMPLE TERMS OF SERVICES
         </p>
     )
 }

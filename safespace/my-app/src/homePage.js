@@ -2,6 +2,7 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 import InputGroup from 'react-bootstrap/InputGroup'
 import FormControl from 'react-bootstrap/FormControl'
+import { Container, Button as FloatingButton, Link, lightColors, darkColors } from 'react-floating-action-button'
 
 function HomePage() {
     return (
@@ -12,6 +13,19 @@ function HomePage() {
             <div className="contentDiv">
                 <SearchBar />
                 <Post />
+                <Post />
+                <Post />
+                <Post />
+                <Post />
+                <Post />
+                <Post />
+                <Post />
+                <Post />
+                <Post />
+                <Post />
+                <Post />
+                <Post />
+                <CreatePostButton />
             </div>
         </div>
 
@@ -47,5 +61,17 @@ function Post() {
     )
 }
 
+function CreatePostButton() {
+    return (
+        <Container>
+            <FloatingButton
+            className="fab-item btn btn-link btn-lg text-white"
+            tooltip="Create a new post"
+            icon="fas fa-plus"
+            styles={{backgroundColor: darkColors.lighterRed, color: darkColors.blue}}
+            />
+        </Container>
+    )
+}
 
 export default HomePage;

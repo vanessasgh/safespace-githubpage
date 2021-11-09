@@ -6,6 +6,7 @@ import AboutUsPage from './aboutUsPage';
 import SignInPage from './signInPage';
 import SignUpPage from './signUpPage';
 import ResourcePage from './resourcePage';
+import ProfilePage from './profilePage';
 
 function App(props) {
   // TODO: implement other pages to render
@@ -22,7 +23,10 @@ function App(props) {
     return <SignUpPage {...routerProps} props={props} />
   }
   const renderResourcePage = (routerProps) => {
-      return <ResourcePage {...routerProps} props={props} />
+    return <ResourcePage {...routerProps} props={props} />
+  }
+  const renderProfilePage = (routerProps) => {
+    return <ProfilePage {...routerProps} props={props} />
   }
 
   return (
@@ -36,6 +40,7 @@ function App(props) {
           <Route path="/login" render={renderSignInPage} />
           <Route path="/signup" render={renderSignUpPage} />
           <Route path="/resources" render={renderResourcePage} />
+          <Route path="/profile" render={renderProfilePage} />
           <Redirect to="/onboarding" />
         </Switch>
       </div>

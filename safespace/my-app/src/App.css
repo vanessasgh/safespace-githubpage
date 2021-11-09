@@ -157,3 +157,55 @@
     justify-content: space-evenly;
     list-style-type: none;
 }
+
+.profileTabDiv {
+  display: flex;
+  flex-direction: row;
+}
+
+#tabContainer {
+  width: 100%;
+}
+
+.tabNavItem {
+  width: 50%;
+}
+
+.editProfileButton{
+  margin-bottom: 5vw;
+  background-color: #E9F1F7;
+  color: black;
+  border-color: #131B23;
+}
+
+.editProfileButton:hover{
+  background-color: #131B23;
+}
+
+.tabContentItem {
+  margin-top: 5vw;
+}
+
+.postMainDiv {
+  background-color: #E9F1F7;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 2vw;
+  text-align: start;
+}
+
+.postContentDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 1vw;
+}
+
+.textInPostDiv {
+  background-color: #FFFF;
+  padding: 1vw;
+  border-radius: 10px;
+  width: 100%;
+  margin-right: 2vw;
+}

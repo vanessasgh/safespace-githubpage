@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { InputGroup, FormControl, Button, Container, Row, Col, Image } from 'react-bootstrap'
 import test from './mapPlaceholder.jpg'
+import ReactPlayer from 'react-player'
 
 function ResourcePage() {
     return (
@@ -22,7 +23,11 @@ function recoveryPage() {
         <div>
             <h2 className="resourcesContentDiv">First Steps to Recovery</h2>
             <ul className="resourcesLists">
-                <li><a href="https://www.youtube.com/watch?v=h2au58zB_kk">From suicidal to hopeful, how I learnt to fight | Jazz Thornton | TEDxAuckland</a></li>
+                <li>
+                    <div alt="From suicidal to hopeful, how I learnt to fight | Jazz Thornton | TEDxAuckland">
+                        <ReactPlayer url="https://www.youtube.com/watch?v=h2au58zB_kk"/>
+                    </div>
+                </li>
                 <li><a href="https://save.org/find-help/im-having-suicidal-thoughts/.">Suicide Awareness Voice of Education</a></li>
             </ul>
         </div>
@@ -34,7 +39,11 @@ function betterHabitsPage() {
         <div>
             <h2 className="resourcesContentDiv">Building Better Habits</h2>
             <ul className="resourcesLists">
-                <li><a href="https://www.youtube.com/watch?v=3QIfkeA6HBY">8 Things You Can Do To Improve Your Mental Health</a></li>
+                <li>
+                    <div alt="8 Things You Can Do To Improve Your Mental Health">
+                        <ReactPlayer url="https://www.youtube.com/watch?v=3QIfkeA6HBYk"/>
+                    </div>
+                </li>
                 <li><a href="https://www.mhanational.org/31-tips-boost-your-mental-health">31 Tips to Boost Your Mental Health</a></li>
             </ul>
         </div>

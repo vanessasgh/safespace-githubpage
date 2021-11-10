@@ -2,6 +2,7 @@ import React from 'react'
 import Button from 'react-bootstrap/Button'
 import Tab from 'react-bootstrap/Tab'
 import Nav from 'react-bootstrap/Nav'
+import Tabs from 'react-bootstrap/Tabs'
 
 function ProfilePage() {
     return (
@@ -9,31 +10,21 @@ function ProfilePage() {
             <h1>Username</h1>
             <h2>University</h2>
             <Button variant="primary" className="editProfileButton">Edit</Button>
-            <Tabs />
+            <MainTabs />
         </div>
     )
 }
 
-function Tabs() {
-    return (
-        <Tab.Container id="tabContainer" defaultActiveKey="posts">
-            <Nav variant="tabs" className="flex-row">
-                <Nav.Item className="tabNavItem">
-                    <Nav.Link eventKey="posts" className="tabNavLink">Posts</Nav.Link>
-                </Nav.Item>
-                <Nav.Item className="tabNavItem">
-                    <Nav.Link eventKey="saved">Saved</Nav.Link>
-                </Nav.Item>
-            </Nav>
-            <Tab.Content className="tabContentItem">
-                <Tab.Pane eventKey="posts">
-                    <AllPosts />
-                </Tab.Pane>
-                <Tab.Pane eventKey="saved">
-                    <SavedAllPosts />
-                </Tab.Pane>
-            </Tab.Content>
-        </Tab.Container>
+function MainTabs() {
+    return(
+        <Tabs defaultActiveKey="posts" id="uncontrolled-tab-example" className="tabContainer" className="nav-justified">
+            <Tab eventKey="posts" title="Posts" tabClassName="tabContainer">
+                <AllPosts />
+            </Tab>
+            <Tab eventKey="saved" title="Saved" tabClassName="tabContainer">
+                <SavedAllPosts />
+            </Tab>
+        </Tabs>
     )
 }
 

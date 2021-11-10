@@ -241,3 +241,8 @@
 .contactUsLink {
   text-decoration: none;
 }
+
+.tabContainer {
+    background-color: white;
+    color: black;
+}

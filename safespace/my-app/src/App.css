@@ -146,6 +146,10 @@
   font-size: small;
 }
 
+.searchBar {
+  margin-bottom: 5vw;
+}
+
 .resourcesContentDiv {
     text-align: left;
     flex-direction: column;

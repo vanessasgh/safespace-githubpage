@@ -58,6 +58,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: baseline;
   background-color: #131B23;
 }
 
@@ -149,6 +150,47 @@
   margin-bottom: 5vw;
 }
 
+.resourcesContentDiv {
+    text-align: left;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.resourcesLists {
+    text-align: left;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.profileTabDiv {
+  display: flex;
+  flex-direction: row;
+}
+
+#tabContainer {
+  width: 100%;
+}
+
+.tabNavItem {
+  width: 50%;
+}
+
+.editProfileButton{
+  margin-bottom: 5vw;
+  background-color: #E9F1F7;
+  color: black;
+  border-color: #131B23;
+}
+
+.editProfileButton:hover{
+  background-color: #131B23;
+}
+
+.tabContentItem {
+  margin-top: 5vw;
+}
+
 .postMainDiv {
   background-color: #E9F1F7;
   display: flex;
@@ -173,3 +215,38 @@
   margin-right: 2vw;
 }
 
+.link {
+  background:none;
+  border:none; 
+  padding: 0px;
+  color: blue;
+  text-decoration: underline;
+}
+
+.noUnderline {
+  text-decoration: none;
+}
+
+.profileDropdownButton {
+  background-color: none;
+  outline: none;
+  color: white;
+  appearance: none;
+}
+
+.nav-link {
+  color: white;
+}
+
+.invisibleDivider {
+  margin-top: 5vw;
+}
+
+.contactUsLink {
+  text-decoration: none;
+}
+
+.tabContainer {
+    background-color: white;
+    color: black;
+}

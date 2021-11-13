@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import InputGroup from 'react-bootstrap/InputGroup'
 import FormControl from 'react-bootstrap/FormControl'
@@ -48,13 +48,15 @@ function SearchBar() {
 }
 
 function Post() {
+    const isSavedPost = false;
     return (
         <div className="postMainDiv">
             <div className="postContentDiv">
-                <div className="textInPostDiv">
-                    <p>Some text</p>
-                </div>
-                <i class="bi bi-star"></i>
+                <p>11/10/2021</p>
+                <SavePostButton isSavedPost={isSavedPost} />
+            </div>
+            <div className="textInPostDiv">
+                <p>Some text</p>
             </div>
             <p>Tags: .........</p>
         </div>
@@ -65,13 +67,28 @@ function CreatePostButton() {
     return (
         <Container>
             <FloatingButton
-            className="fab-item btn btn-link btn-lg text-white"
-            tooltip="Create a new post"
-            icon="fas fa-plus"
-            styles={{backgroundColor: darkColors.lighterRed, color: darkColors.blue}}
+                className="fab-item btn btn-link btn-lg text-white"
+                tooltip="Create a new post"
+                icon="bi bi-plus bi-lg"
+                styles={{ backgroundColor: darkColors.blue, color: lightColors.white }}
             />
         </Container>
     )
+}
+
+function SavePostButton(isSavedPost) {
+    const [isSaved, setSavedStatus] = useState(isSavedPost)
+    let saveOrUnsavePost = () => {
+        setSavedStatus(!isSaved)
+    }
+    let savedPostButtonClass = "bi bi-star";
+    if (isSaved) {
+        savedPostButtonClass = "bi bi-star-fill"
+    }
+    return (
+        <i className={savedPostButtonClass} onClick={saveOrUnsavePost}></i>
+    )
+
 }
 
 export default HomePage;

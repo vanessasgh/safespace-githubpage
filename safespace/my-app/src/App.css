@@ -206,7 +206,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 1vw;
 }
 
 .textInPostDiv {
@@ -215,6 +214,7 @@
   border-radius: 10px;
   width: 100%;
   margin-right: 2vw;
+  margin-bottom: 1vw;
 }
 
 .link {
@@ -251,4 +251,10 @@
 .tabContainer {
     background-color: white;
     color: black;
+}
+
+.savePostButton {
+  background-color: #E9F1F7;
+  border: none;
+  color: none;
 }

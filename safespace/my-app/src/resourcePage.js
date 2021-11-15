@@ -28,12 +28,12 @@ function recoveryPage() {
                     <div alt="From suicidal to hopeful, how I learnt to fight | Jazz Thornton | TEDxAuckland">
                         <ReactPlayer url="https://www.youtube.com/watch?v=h2au58zB_kk"/>
                     </div>
-                    <li className="TedTalkCitation">TEDx Talks. (2018). From suicidal to hopeful, how I learnt to fight . Youtube. Retrieved November 14, 2021, from https://youtu.be/h2au58zB_kk. </li>
+                    <li className="TedTalkCitation">TEDx Talks. (2018). From suicidal to hopeful, how I learnt to fight . Youtube.</li>
                 </li>
                 <br></br>
                 <h3 className="saveOrgArticleTitle">Suicide Awareness Voice of Education</h3>
-                <li className="SaveOrgArticleLink"><a href="https://save.org/find-help/im-having-suicidal-thoughts/.">Suicide Awareness Voice of Education</a></li>
-                <li className="suicidalThoughtsCitation">I'm having Suicidal thoughts. SAVE. (n.d.). Retrieved November 14, 2021, from https://save.org/find-help/im-having-suicidal-thoughts/. </li>
+                <iframe src="https://save.org/find-help/im-having-suicidal-thoughts/" height="400px" width="600px" title="Suicide Awareness Voice of Education"></iframe>
+                <li className="suicidalThoughtsCitation"><a href="https://save.org/find-help/im-having-suicidal-thoughts/." target="_blank">I'm Having Thoughts of Suicide</a>. SAVE. (n.d.).</li>
             </ul>
         </div>
     )
@@ -49,12 +49,12 @@ function betterHabitsPage() {
                     <div alt="8 Things You Can Do To Improve Your Mental Health">
                         <ReactPlayer url="https://www.youtube.com/watch?v=3QIfkeA6HBYk"/>
                     </div>
-                    <li className="mentalHealthVideoCitation">Psych2Go. (2021, April 5). 8 things you can do to improve your mental health - youtube. Youtube. Retrieved November 14, 2021, from https://www.youtube.com/watch?v=3QIfkeA6HBY. </li>
+                    <li className="mentalHealthVideoCitation">Psych2Go. (2021, April 5). 8 things you can do to improve your mental health - youtube. Youtube.</li>
                 </li>
                 <br></br>
                 <h3 className="mentalHealthTipsTitle">31 Tips to Boost Your Mental Health</h3>
-                <li className="mentalHealthTipsLink"><a href="https://www.mhanational.org/31-tips-boost-your-mental-health">31 Tips to Boost Your Mental Health</a></li>
-                <li className="mentalHealthTipsCitation">31 tips to boost your mental health. Mental Health America. (n.d.). Retrieved November 14, 2021, from https://www.mhanational.org/31-tips-boost-your-mental-health. </li>
+                <iframe src="https://www.mhanational.org/31-tips-boost-your-mental-health" height="400px" width="600px" title="31 Tips to Boost Your Mental Health"></iframe>
+                <li className="mentalHealthTipsCitation"><a href="https://www.mhanational.org/31-tips-boost-your-mental-health" target="_blank">31 Tips to Boost Your Mental Health</a>. Mental Health America. (n.d.).</li>
             </ul>
         </div>
     )

@@ -110,6 +110,7 @@
 
 .ourTeamList {
   list-style-type: none;
+
 }
 
 .contentDiv {
@@ -219,7 +220,7 @@
 
 .link {
   background:none;
-  border:none; 
+  border:none;
   padding: 0px;
   color: blue;
   text-decoration: underline;
@@ -272,4 +273,29 @@
 
 .createNewPostIcon {
   font-size: 5em;
+}
+
+.SaveOrgArticleLink {
+  font-size: 1.5em;
+}
+
+.suicidalThoughtsCitation {
+  font-size: 0.8em;
+}
+
+.TedTalkCitation {
+  font-size: 0.8em;
+}
+
+.mentalHealthVideoCitation {
+  font-size: 0.8em;
+}
+
+
+.mentalHealthTipsLink {
+  font-size: 1.5em;
+}
+
+.mentalHealthTipsCitation {
+  font-size: 0.8em;
 }

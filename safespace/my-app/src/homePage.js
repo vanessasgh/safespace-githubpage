@@ -1,15 +1,24 @@
-import React, { useState } from 'react';
-import Button from 'react-bootstrap/Button';
+import React, { useState } from 'react'
+import Button from 'react-bootstrap/Button'
 import InputGroup from 'react-bootstrap/InputGroup'
 import FormControl from 'react-bootstrap/FormControl'
-import { Container, Button as FloatingButton, Link, lightColors, darkColors } from 'react-floating-action-button'
+import Form from 'react-bootstrap/Form'
+import { Container, Button as FloatingButton, lightColors, darkColors } from 'react-floating-action-button'
 import Modal from 'react-bootstrap/Modal'
+import { Link } from "react-router-dom"
 
 function HomePage() {
     const [showCreateNewPostDialog, setShowCreateNewPostDialog] = useState(false);
     const handleCloseNewPostDialog = () => setShowCreateNewPostDialog(false);
     const handleShowCreateNewPostDialog = () => setShowCreateNewPostDialog(true);
     const handleSubmitNewPost = () => null;
+
+    const [showNotLoggedInDialog, setShowNotLoggedInDialog] = useState(false);
+    const handleCloseNotLoggedInDialog = () => setShowNotLoggedInDialog(false);
+    const handleShowNotLoggedInDialog = () => setShowNotLoggedInDialog(true);
+
+    let isLoggedIn = false;
+    const showDialog = isLoggedIn ? handleShowCreateNewPostDialog : handleShowNotLoggedInDialog
 
     return (
         <div className="mainContentDiv">
@@ -36,11 +45,12 @@ function HomePage() {
                         className="fab-item btn btn-link btn-lg text-white"
                         tooltip="Create a new post"
                         icon="bi bi-plus bi-lg"
-                        onClick={handleShowCreateNewPostDialog}
+                        onClick={showDialog}
                         styles={{ backgroundColor: darkColors.blue, color: lightColors.white }}
                     />
                 </Container>
             </div>
+            {/* create new post dialog */}
             <Modal show={showCreateNewPostDialog} onHide={handleCloseNewPostDialog}>
                 <Modal.Body>
                     <div>
@@ -48,18 +58,30 @@ function HomePage() {
                             <i className="bi bi-pencil-square createNewPostIcon"></i>
                             <h1>Create a New Post</h1>
                         </div>
-                        <form className="createNewPostDialogContentDiv">
-                            <div class="form-group">
-                                <label for="createInputEmail">Content</label>
-                                <input type="email" class="form-control" id="createInputEmail" aria-describedby="emailHelp" placeholder="How are you feeling today, username?"></input>
-                            </div>
-                            <div class="form-group">
-                                <label for="usernameInput">Tags</label>
-                                <input type="username" class="form-control" id="usernameInput" placeholder="Enter tags seperated by commas"></input>
-                            </div>
-                            <button type="submit" class="btn btn-primary authenticationBtn" onClick={handleSubmitNewPost}>Submit</button>
-                            <button type="cancel" class="btn btn-secondary authenticationBtn" onClick={handleCloseNewPostDialog}>Cancel</button>
-                        </form>
+                        <Form>
+                            <Form.Group className="mb-3" controlId="newPostContentControlInput">
+                                <Form.Label>Content</Form.Label>
+                                <Form.Control as="textarea" rows={3} placeholder="How are you feeling today, username?" />
+                            </Form.Group>
+                            <Form.Group className="mb-3" controlId="newPostTagControlInput">
+                                <Form.Label>Tags</Form.Label>
+                                <Form.Control type="text" placeholder="Enter tags seperated by commas" />
+                            </Form.Group>
+                            <Button type="submit" className="authenticationBtn">Submit</Button>
+                            <Button type="cancel" variant="secondary" className="authenticationBtn" onClick={handleCloseNewPostDialog}>Cancel</Button>
+                        </Form>
+                    </div>
+                </Modal.Body>
+            </Modal>
+            {/* log in dialog */}
+            <Modal show={showNotLoggedInDialog} onHide={handleCloseNotLoggedInDialog}>
+                <Modal.Header closeButton>
+                </Modal.Header>
+                <Modal.Body>
+                    <div className="notLoggedInDialogDiv">
+                        <h1 className="center">Want to share your stories too?</h1>
+                        <Link to="/signup"><button type="page" class="btn btn-primary notLoggedInDialogBtn">Create an Account</button></Link>
+                        <Link to="/login"><button type="page" class="btn btn-secondary notLoggedInDialogBtn">Log In</button></Link>
                     </div>
                 </Modal.Body>
             </Modal>

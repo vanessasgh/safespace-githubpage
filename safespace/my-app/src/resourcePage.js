@@ -27,8 +27,12 @@ function recoveryPage() {
                     <div alt="From suicidal to hopeful, how I learnt to fight | Jazz Thornton | TEDxAuckland">
                         <ReactPlayer url="https://www.youtube.com/watch?v=h2au58zB_kk"/>
                     </div>
+                    <li className="TedTalkCitation">TEDx Talks. (2018). From suicidal to hopeful, how I learnt to fight . Youtube. Retrieved November 14, 2021, from https://youtu.be/h2au58zB_kk.</li>
                 </li>
-                <li><a href="https://save.org/find-help/im-having-suicidal-thoughts/.">Suicide Awareness Voice of Education</a></li>
+                <br></br>
+                <h3 className="saveOrgArticleTitle">Suicide Awareness Voice of Education</h3>
+                <li className="SaveOrgArticleLink"><a href="https://save.org/find-help/im-having-suicidal-thoughts/.">Suicide Awareness Voice of Education</a></li>
+                <li className="suicidalThoughtsCitation">I'm having Suicidal thoughts. SAVE. (n.d.). Retrieved November 14, 2021, from https://save.org/find-help/im-having-suicidal-thoughts/. </li>
             </ul>
         </div>
     )

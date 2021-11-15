@@ -2,6 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button'
+import { Typeahead } from 'react-bootstrap-typeahead'
+import college from './us_institutions.json'
+
+var formattedCollege = []
+for (var i = 0; i < college.length; i++) {
+    formattedCollege.push(college[i].institution)
+}
 
 function SignUpPage() {
     const [showPrivacyPolicy, setShowPrivacyPolicy] = useState(false);
@@ -12,6 +19,7 @@ function SignUpPage() {
 
     const handleCloseTOS = () => setShowTOS(false);
     const handleShowTOS = () => setShowTOS(true);
+    const [singleSelections, setSingleSelections] = useState([]);
 
     return (
         <div className="mainContentPage">
@@ -37,7 +45,14 @@ function SignUpPage() {
                         </div>
                         <div class="form-group">
                             <label for="createInputCollege">College of Attendance</label>
-                            <input type="dropdown" class="form-control" id="createInputCollege" placeholder="Select your current college"></input>
+                            <Typeahead
+                                id="basic-typeahead-single"
+                                labelKey="name"
+                                onChange={setSingleSelections}
+                                options={formattedCollege}
+                                placeholder="Select your current college"
+                                selected={singleSelections}
+                            />
                         </div>
                         <button type="submit" class="btn btn-primary authenticationBtn">Submit</button>
                     </form>

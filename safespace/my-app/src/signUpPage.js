@@ -4,6 +4,8 @@ import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button'
 import { Typeahead } from 'react-bootstrap-typeahead'
 import college from './us_institutions.json'
+//import firebase from 'firebase/app'
+import { useHistory } from "react-router-dom";
 
 var formattedCollege = []
 for (var i = 0; i < college.length; i++) {
@@ -21,27 +23,78 @@ function SignUpPage() {
     const handleShowTOS = () => setShowTOS(true);
     const [singleSelections, setSingleSelections] = useState([]);
 
+    const [email, setEmail] = useState("");
+    const [username, setUsername] = useState("");
+    const [password, setPassword] = useState("");
+    const [confirmPassword, setConfirmPassword] = useState("");
+    const [college, setCollege] = useState("");
+    const history = useHistory();
+    
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        if (password !== confirmPassword) {
+            alert('password is not the same with confirmeed password')
+        } else {
+            firebase.database().ref('users').set({
+                email: email,
+                username: username,
+                password: password,
+                college: college
+            })
+            history.push('/home')
+        }
+    }
+
     return (
         <div className="mainContentPage">
             <div className="authenticationDiv">
                 <div className="authenticationContent">
                     <h1>Sign Up</h1>
-                    <form>
+                    <form onSubmit={handleSubmit}>
                         <div class="form-group">
                             <label for="createInputEmail">Email address</label>
-                            <input type="email" class="form-control" id="createInputEmail" aria-describedby="emailHelp" placeholder="Enter email"></input>
+                            <input 
+                                type="email"
+                                class="form-control" 
+                                id="createInputEmail" 
+                                aria-describedby="emailHelp" 
+                                placeholder="Enter email"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                            />
                         </div>
                         <div class="form-group">
                             <label for="usernameInput">Username</label>
-                            <input type="username" class="form-control" id="usernameInput" placeholder="Enter username"></input>
+                            <input 
+                                type="username" 
+                                class="form-control" 
+                                id="usernameInput" 
+                                placeholder="Enter username"
+                                value={username}
+                                onChange={(e) => setUsername(e.target.value)}
+                            />
                         </div>
                         <div class="form-group">
                             <label for="createInputPassword">Password</label>
-                            <input type="password" class="form-control" id="createInputPassword" placeholder="Enter password"></input>
+                            <input 
+                                type="password" 
+                                class="form-control" 
+                                id="createInputPassword" 
+                                placeholder="Enter password"
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
+                            />
                         </div>
                         <div class="form-group">
                             <label for="confirmInputPassword">Confirm Password</label>
-                            <input type="password" class="form-control" id="confirmInputPassword" placeholder="Confirm password"></input>
+                            <input 
+                                type="password" 
+                                class="form-control" 
+                                id="confirmInputPassword" 
+                                placeholder="Confirm password"
+                                value={confirmPassword}
+                                onChange={(e) => setConfirmPassword(e.target.value)}
+                            />
                         </div>
                         <div class="form-group">
                             <label for="createInputCollege">College of Attendance</label>
@@ -51,7 +104,8 @@ function SignUpPage() {
                                 onChange={setSingleSelections}
                                 options={formattedCollege}
                                 placeholder="Select your current college"
-                                selected={singleSelections}
+                                selected={college}
+                                onChange={(e) => setCollege(e)}
                             />
                         </div>
                         <button type="submit" class="btn btn-primary authenticationBtn">Submit</button>

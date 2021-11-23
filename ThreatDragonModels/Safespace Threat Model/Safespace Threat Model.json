@@ -1,0 +1,10 @@
+{
+  "summary": {
+    "title": "Safespace Threat Model",
+    "description": "A simple login, and blog post website"
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": []
+  }
+}
